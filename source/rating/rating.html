@@ -1,0 +1,17 @@
+<html style="background-color: white; position: fixed;">
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+</style>
+    <body style="width: 120px; height: 170px; background-color:rgb(235, 235, 235); display: grid; justify-content: center;">
+        <form action="rating.php" method="post" style="display: grid; justify-content: center; width: 100px; height: 150px; background-color: rgb(128, 128, 128);">
+            <label for="Rating" style="display: flex; align-items: center; justify-content: center;"><img id="Rating" src="../img/none.png" width="100" height="100"></label>
+            <input type="range" name="rating" max="5" id="val" oninput="ratingUpdate()" style="width: 120px; height: 30px; background-color: rgb(255, 255, 255);" />
+            <input type="text" name="name" placeholder="Your Name" minlength="5" maxlength="20" style="width: 120px; height: 30px; text-align: center;" />
+            <input type="submit" value="Rating" style="width: 120px; height: 30px;"/>
+        </form>
+    </body>
+    <script src="../javascript/rating.js"></script>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/itg_logo.png" type="image/x-icon">
+    <title>ITG EBooks: 2nd Sem</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<body>
+    <nav>
+        <img src="img/itg_logo.png" width="50" height="50">
+        <a href="index.html">ITG EBooks: 2nd Sem</a>
+        <input id="value" type="search" placeholder="Direct Download By Book Name" oninput="search()" />
+    </nav>
+    <div id="suggestion_box">
+        <a href="https://itgopeshwar.ac.in/">ITG<img src="img/itg_logo.png" width="20" height="20"></a>
+        <a href="https://drive.google.com/file/d/1YzEA6F9FHrJOHkqaCf2WW3rd9ezcJPOm/view?usp=sharing">Advanced Engineering Mathematics</a>                                  
+        <a href="https://drive.google.com/file/d/1YcdVdOb68kD7pKk9EGFdh5f9z9a6deHY/view?usp=sharing">Applied Chemistry And Chemical Engineering Volume 1</a>
+        <a href="https://drive.google.com/file/d/1ZIbfPQPkczLpeReCKfgL3IbifGvbJvP-/view?usp=sharing">Basic Electrical Engineering</a>
+        <a href="https://drive.google.com/file/d/1YitS7KMk_yRn1AOwcBj09VLk_CoxC1FV/view?usp=sharing">Electronic Devices And Circuits</a>
+        <a href="https://drive.google.com/file/d/1YejML5-n129XdrlJUKhmeorn4n0NzgDh/view?usp=sharing">Engineering Chemistry</a>
+        <a href="https://drive.google.com/file/d/1YfalP4z4HBluOaytUO_xGvHWhJxjZ4v9/view?usp=sharing">Essentials Of Organic Chemistry</a>
+        <a href="https://drive.google.com/file/d/1YgUYjgqAgE-eXyo7XfRtSYMU9DAMLxX3/view?usp=sharing">Fundamentals Of Computer Programming With C#</a>
+        <a href="https://drive.google.com/file/d/1Yk1cNBpNRAE4BrIhw0e3nkhJDna9a13P/view?usp=sharing ">Fundamentals Of Electronics</a>
+        <a href="https://drive.google.com/file/d/1YnSK_cEIJqJPEI67YURYALj3VoQAvpg2/view?usp=sharing">Fundamentals Of Physics</a>
+        <a href="https://drive.google.com/file/d/1ZN_Pz3LBc4paVt7GXWMra0Ib6vWgEzzm/view?usp=sharing">Handbook Of Communication And Social Interaction Skills</a>
+        <a href="https://drive.google.com/file/d/1ZUvO6jevguGXYMC8xVRHv52IQ2Irx2Ew/view?usp=sharing">Higher Engineering Mathematics</a>
+        <a href="https://drive.google.com/file/d/1ZaS6pDcMHmjfMXulGqDMkNeqHS8dD5Fs/view?usp=sharing">Higher Mathematics For Physics And Engineering</a>
+        <a href="https://drive.google.com/file/d/1ZSrHCHJUud3tjcv1ubaD0GDIo63OiEhX/view?usp=sharing">Improve Your Communication Skills</a>
+        <a href="https://drive.google.com/file/d/1Z6jLwv7yVtkfz5JowTkksFjcUvTl7ntF/view?usp=sharing">ManualOf Engineering Drawing</a>
+        <a href="https://drive.google.com/file/d/1YuE9epAOrNp4oZ06v4M_xZJLS0h54KH1/view?usp=sharing">Mechanical Engineers Handbook 1</a>
+        <a href="https://drive.google.com/file/d/1YoilUc5cRYuDbCTrQrXTFtfdFiCwy0qS/view?usp=sharing">Mechanical Engineers Handbook 2</a>
+        <a href="https://drive.google.com/file/d/1ZTUa2eItZlE2iWMwjth-w6fRNEtkBmTN/view?usp=sharing">Physical Chemistry</a>
+    </div>
+    <main>
+        <div id="scrolling_books" class="shelf">
+            <div class="box"></div>
+            <a class="book" href="book_type_maths_name"><img src="img/ds.png" draggable="false"></a>
+            <a class="book" href="book_type_maths_name"><img src="img/dsc.png" draggable="false"></a>
+            <a class="book" href="book_type_maths_name"><img src="img/oop.png" draggable="false"></a>
+            <a class="book" href="book_type_maths_name"><img src="img/dsc2.png" draggable="false"></a>
+            <a class="book" href="book_type_maths_name"><img src="img/java.png" draggable="false"></a>
+        </div>
+        <div class="notice">
+            <div class="notice_box"></div>
+            <p>Here You Can Download All Itg Books and Study Material !!! &CircleTimes; New Updates were coming soon so stay in touch.</p>
+        </div>
+        <div class="main_content">
+            <div class="branch" onclick="cse_books(0)">
+                <div class="branch_name">
+                    Computer Science
+                </div>
+            </div>
+            <div class="branch" onclick="cse_books(1)">
+                <div class="branch_name">
+                    Civil
+                </div>
+            </div>
+            <div class="branch" onclick="cse_books(2)">
+                <div class="branch_name">
+                    Mechanical
+                </div>
+            </div>
+            <div class="branch" onclick="cse_books(3)">
+                <div class="branch_name">
+                    Electronic
+                </div>
+            </div>
+            <div class="branch" onclick="cse_books(4)">
+                <div class="branch_name">
+                    Electrical
+                </div>
+            </div>
+        </div>
+        <div id="ratingBox" class="rating">
+            <button onclick="closeRating()">&cross;</button>
+            <embed src="rating/rating.html">
+        </div>
+    </main>
+    <div class="information" >
+        <p>Branch</p> 
+        <h2 id="branch_name"></h2>
+        <div class="content_box">
+            <iframe id="iframe" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+    <div id="messageCount" class="messageCount" draggable="false" title="You Got 1 Notification">
+        <img src="img/bell.gif">
+        <span id="msgCount">1</span>
+    </div>
+    <footer>
+        <p>&copy; 2022</p>
+        <img class="ratingImg" src="img/none.png" width="50" onclick="showRating()" />
+        <a href='rating/ratingData.html'>Rating's</a>
+    </footer>
+    <script src="javascript/main.js"></script>
+</body>
+</html>

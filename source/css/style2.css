@@ -1,0 +1,136 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    width: 100vw;
+    height: max-content;
+    overflow-x: hidden;
+}
+
+main {
+    position: relative;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 10px);
+    height: max-content;
+    margin: 5px;
+    background: linear-gradient(10deg, rgb(150, 150, 255), rgb(255, 150, 150));
+}
+
+.book {
+    position: relative;
+    width: 300px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    transition-duration: 0.2s;
+    margin: 10px;
+}
+
+.book:hover {
+    transform: scaleX(102%) scaleY(102%);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.568);
+}
+
+
+img {
+    position: relative;
+    height: 100px;
+    width: 60px;
+}
+
+h1 {
+    margin: 5px;
+    color: cadetblue;
+}
+
+.details {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    width: 220px;
+    height: 80px;
+    left: 60px;
+    font-size: small;
+    padding: 10px;
+    gap: 10px;
+}
+
+button {
+    width: 220px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(138, 138, 255);
+}
+
+button:active {
+    background-color: rgb(148, 255, 138);
+}
+
+
+@media (max-width: 600px) {
+    h1 {
+        margin: 5px;
+        color: cadetblue;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        font-size: smaller;
+        transition-duration: 2s;
+        z-index: 10;
+        backdrop-filter: blur(5px) sepia(50);
+        padding: 5px;
+    }
+
+    body {
+        grid-template-columns: auto;
+    }
+
+    img {
+        height: 100px;
+        width: 60px;
+        scroll-snap-align: center;
+    }
+
+    .book {
+        position: relative;
+        width: 230px;
+        height: 100px;
+        background-color: rgb(255, 255, 255);
+        margin: 10px;
+        scroll-snap-align: center;
+    }
+
+    
+    .details {
+        width: 150px;
+        height: 80px;
+        left: 60px;
+        font-size: small;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    button {
+        width: 150px;
+        cursor: pointer;
+    }
+
+    main {
+        position: relative;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+}
